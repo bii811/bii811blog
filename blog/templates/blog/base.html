@@ -1,0 +1,43 @@
+﻿{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Bii811 blog">
+        <meta name="author" content="Bii811">
+        <link rel="icon" href="{% static 'blog/favicon.ico' %}">
+
+        <title>Bii811 - {% block pagetitle %}{% endblock %}  </title>
+        
+        <!-- Bootstrap css -->
+        <link href="{% static 'blog/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Custom style css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+        
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="blog-header">
+                <h1 class="blog-title"><a href="/" style="color: #000000;">Bii811</a></h1>
+                <p class="lead blog-description">ສາລະ - ວ່ອງໄວ - ໄດ້ໃຈຄວາມ</p>
+            </div>
+
+            <!-- Content -->
+            {% block content %}
+            {% endblock %}
+
+        </div><!-- /.container -->
+
+        <!-- Footer -->
+        <footer class="blog-footer">
+            <p>© 2015-{% now "Y" %} <a href="/">Bii811</a> ALL RIGHTS RESERVED</p>
+        </footer>
+
+    </body>
+</html>

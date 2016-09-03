@@ -1,0 +1,70 @@
+a:link    { color:#000000; text-decoration:none; }
+a:visited { color:#828282; text-decoration:none; }
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Blog */
+.blog-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #eee;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  margin-bottom: 10px;
+  font-family: "Phetsarath_OT", Courier, monospace;
+  font-size: 20px;
+  color: #999;
+}
+
+/* Blog Post List */
+.list-group-item-heading, .blog-post-title, .blog-post-content {
+  font-family: "Phetsarath_OT", Courier, monospace;
+}
+
+/* Blog Post */
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+  word-wrap: break-word;
+}
+.blog-post-content {
+  font-size: 16px;
+}
+
+/* Blog Footer */
+.blog-footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+/* Font */
+@font-face {
+    font-family: 'Phetsarath_OT'; 
+    src: url('../fonts/phetsarath_ot.eot'); 
+    src: url('../fonts/phetsarath_ot.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/phetsarath_ot.woff2') format('woff2'), 
+    url('../fonts/phetsarath_ot.woff') format('woff'), 
+    url('../fonts/phetsarath_ot.ttf') format('truetype'),
+    url('../fonts/phetsarath_ot.svg#Phetsarath_OT') format('svg'); 
+    font-weight: normal;
+    font-style: normal; 
+}
